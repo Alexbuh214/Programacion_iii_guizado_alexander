@@ -1,0 +1,212 @@
+# ================================
+
+# DEPENDENCIAS
+
+# ================================
+
+**/node_modules/
+**/.pnp/
+**/.pnp.js
+
+# ================================
+
+# VARIABLES DE ENTORNO
+
+# ================================
+
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Mantener ejemplos de variables
+
+!**/.env.example
+
+# ================================
+
+# BUILDS / COMPILADOS
+
+# ================================
+
+**/dist/
+**/build/
+**/out/
+**/.next/
+**/.nuxt/
+**/.output/
+
+# ================================
+
+# TYPESCRIPT
+
+# ================================
+
+**/*.tsbuildinfo
+
+# ================================
+
+# REACT / VITE
+
+# ================================
+
+**/.vite/
+**/coverage/
+
+# ================================
+
+# NESTJS
+
+# ================================
+
+**/.nestjs/
+
+# ================================
+
+# TESTING
+
+# ================================
+
+**/coverage/
+**/.nyc_output/
+
+# ================================
+
+# LOGS
+
+# ================================
+
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# ================================
+
+# CACHE
+
+# ================================
+
+**/.cache/
+**/.eslintcache
+**/.stylelintcache
+**/.parcel-cache/
+**/.turbo/
+**/.webpack/
+
+# ================================
+
+# IDE / EDITORES
+
+# ================================
+
+**/.vscode/*
+**/.idea/
+**/*.iml
+
+# Mantener configuraciones útiles de VS Code
+
+!**/.vscode/extensions.json
+!**/.vscode/settings.json
+
+# ================================
+
+# SISTEMA OPERATIVO
+
+# ================================
+
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
+
+# ================================
+
+# ARCHIVOS TEMPORALES
+
+# ================================
+
+**/*.tmp
+**/*.temp
+**/*.swp
+**/*.swo
+**/*~
+
+# ================================
+
+# ARCHIVOS GENERADOS
+
+# ================================
+
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# ================================
+
+# BASES DE DATOS LOCALES
+
+# ================================
+
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+
+# ================================
+
+# ARCHIVOS DE DEPURACIÓN
+
+# ================================
+
+**/.eslintcache
+**/.sass-cache/
+
+# ================================
+
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+
+# ================================
+
+**/*.local
+
+# ================================
+
+# SERVIDORES / PROCESOS
+
+# ================================
+
+**/.pids/
+**/.serverless/
+
+# ================================
+
+# MONOREPOS / WORKSPACES
+
+# ================================
+
+**/.nx/
+**/.yarn/cache/
+**/.yarn/unplugged/
+**/.yarn/install-state.gz
+**/.yarn/build-state.yml
+
+# ================================
+
+# DOCUMENTACIÓN GENERADA
+
+# ================================
+
+**/docs/.cache/
+**/typedoc/
+
+# ================================
+
+# ARCHIVOS DE DEPENDENCIAS OPCIONALES
+
+# ================================
+
+**/.pnpm-debug.log*
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
