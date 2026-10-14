@@ -7,12 +7,101 @@
 </head>
 <body>
     <form action="/registro" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        <button type="submit">Enviar</button>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido">
-        <button type="submit">Enviar</button>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Karen"></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label><br>
+                <input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for ="password_confirm">Confirmar Password</label><br>
+                    <input type="password" id="password_confirm" name="password_confirm">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label type = "number" for="edad">Edad</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for ="nivel">Nivel de fuerza</label><br>
+                    <input type="number" id="nivel" name="nivel" min="10" max="100" value="50">
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <label for ="fut">Seleccionar futbolista</label><br>
+                    <input type ="radio" id="messi" name="bando" value="messi">
+                    <label for="messi">Messi</label><br>
+                    <input type ="radio" id="ronaldo" name="bando" value="ronaldo">
+                    <label for="ronaldo">Ronaldo</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for ="hab">Seleccione habilidades</label><br>
+                    <input type ="checkbox" id="regate" name="hab" value="regate">
+                    <label for="regate">Regate</label><br>
+                    <input type ="checkbox" id="tiro" name="hab" value="tiro">
+                    <label for="tiro">Tiro</label><br>
+                    <input type ="checkbox" id="pase" name="hab" value="pase">
+                    <label for="pase">Pase</label><br>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <label for ="Planeta">Seleccione planeta</label><br>
+                    <select name="planeta" id="planeta">
+                        <option value="tierra">Tierra</option>
+                        <option value="marte">Marte</option>
+                        <option value="venus">Venus</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for ="droide">Seleccione droide</label><br>
+                    <select name="droide" id="droide" multiple size="2">
+                        <option value="r2d2">R2D2</option>
+                        <option value="c3po">C3PO</option>
+                        <option value="bb8">BB8</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Generales</legend>
+                        <label for="misiones">Misiones</label><br>
+                        <input type="number" id ="misiones" name="misiones"><br>
+                        <label for ="vuelos">Vuelos</label><br>
+                        <input type="number" id ="vuelos" name="vuelos"><br>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Enviar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
