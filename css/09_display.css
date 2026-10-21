@@ -1,0 +1,17 @@
+.personaje {
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 10px;
+    color:rgb(0, 0, 0);
+}
+
+.luke {
+    background-color: rgb(120, 120, 185);
+}
+
+.yoda {
+    background-color: rgb(222, 215, 4);
+}
+.vader {
+    background-color: rgb(236, 116, 65);
+}
