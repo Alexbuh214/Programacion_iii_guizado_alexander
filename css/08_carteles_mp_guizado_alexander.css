@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #facc15;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e293b;
+}
+
+nav a {
+    color: #93c5fd;
+    margin: 0 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.cartel {
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 3px solid #3b82f6;
+    border-radius: 15px;
+    background-color: #1e293b;
+}
+
+.cartel h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.retrasado {
+    background-color: #dc2626;
+}
+
+.a-tiempo {
+    background-color: #16a34a;
+}
+
+.aterrizado {
+    background-color: #2563eb;
+}
+
+.descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.frase {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.firma {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.volver {
+    display: block;
+    text-align: center;
+    color: #facc15;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+}
