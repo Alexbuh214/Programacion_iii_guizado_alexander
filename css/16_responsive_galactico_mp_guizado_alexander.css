@@ -1,0 +1,113 @@
+/* Diseño mobile first */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef4fb;
+    color: #1e293b;
+}
+
+header {
+    padding: 2rem 1rem;
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    padding: 0.5rem;
+    color: white;
+    background-color: #0891b2;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.tarjeta {
+    padding: 1rem;
+    background-color: white;
+    border-left: 6px solid #f59e0b;
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    font-size: 1.4rem;
+    color: #0b3d91;
+}
+
+.precio {
+    font-weight: bold;
+    color: #16a34a;
+}
+
+.aviso {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fef3c7;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .destinos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1000px) {
+    .destinos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .tarjeta {
+        padding: 1.5rem;
+    }
+}

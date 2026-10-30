@@ -1,0 +1,175 @@
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #facc15;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Transición de color */
+.boton-reservar {
+    padding: 15px 25px;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.boton-reservar:hover {
+    background-color: #16a34a;
+}
+
+.boton-reservar:focus-visible {
+    background-color: #16a34a;
+    outline: 3px solid #facc15;
+    outline-offset: 4px;
+}
+
+/* Transición con scale */
+.tarjeta {
+    width: 250px;
+    padding: 25px;
+    background-color: #0b3d91;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, transform 0.8s ease;
+}
+
+.tarjeta:hover {
+    background-color: #0891b2;
+    transform: scale(1.15);
+}
+
+/* Translate */
+.hangar {
+    width: 300px;
+    padding: 30px;
+    background-color: #1e293b;
+}
+
+.avion-hangar {
+    width: 100px;
+    padding: 20px;
+    background-color: #0891b2;
+    transition: transform 0.5s ease-in-out;
+}
+
+.avion-hangar:hover {
+    transform: translate(120px, 0);
+}
+
+/* Rotate */
+.brujula {
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #16a34a;
+    border-radius: 50%;
+}
+
+.aguja {
+    color: #facc15;
+    font-size: 70px;
+    transition: transform 1s ease;
+}
+
+.aguja:hover {
+    transform: rotate(180deg);
+}
+
+/* Transformaciones combinadas */
+.avion-combo {
+    width: 60px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: #b45309;
+    transition: transform 0.6s ease;
+}
+
+.avion-combo:hover {
+    transform: translateX(80px) rotate(-15deg) scale(1.5);
+}
+
+/* Animaciones con keyframes */
+.pista {
+    width: 300px;
+    padding: 20px;
+    background-color: #334155;
+    overflow: hidden;
+}
+
+.avion {
+    width: 50px;
+    font-size: 30px;
+    animation-name: despegue;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes despegue {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(240px, -20px);
+    }
+}
+
+.avion2 {
+    width: 50px;
+    font-size: 30px;
+    animation-name: aterrizaje;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aterrizaje {
+    from {
+        transform: translate(240px, -20px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.alerta {
+    width: 260px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    animation-name: parpadeo;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
