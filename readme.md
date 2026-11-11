@@ -45,7 +45,7 @@ En este repositorio se almacenarán las diferentes actividades y proyectos desar
 * Ejercicios y proyectos con TypeScript.
 * Desarrollo de APIs con NestJS.
 * Desarrollo de interfaces con ReactJS.
-* Proyectos integrando frontend y backend.
+* Proyectos integrando frontend y backend
 
 ---
 

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #081020;
+    color: white;
+
+}
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: #172033;
+}
+
+.personaje {
+    padding: 20px;
+    background-color: #2563eb;
+    border: 2px solid #facc15;
+}
+
+.consejo {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color:white ;
+    background-color:#172033 ;
+}
+
+.operaciones {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color:white ;
+    background-color:#172033 ;
+}
+
+.operacion {
+    padding: 30px;
+    background-color: green;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.hangar {
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    color:white ;
+    background-color:#172033 ;
+}
+
+.hangar div {
+    padding: 30px;
+    background-color: green;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.flota {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    color:white ;
+    background-color:#172033 ;
+}
+
+.flota div {
+    padding: 30px;
+    background-color: rgb(0, 34, 128);
+    border: 2px solid rgb(0, 255, 34);
+    text-align: center;
+}
+.consejo2 {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    padding: 20px;
+    color:white ;
+    background-color:#172033 ;
+}
+
+.naves {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+    color:white ;
+    background-color:#172033 ;
+}
+
+.naves div {
+    padding: 30px;
+    background-color: rgb(175, 32, 6);
+    border: 2px solid rgb(238, 255, 0);
+    text-align: center;
+}
+
+.misiones{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 20px;
+    color:white ;
+    background-color:#172033 ;
+}
+.misiones div {
+    padding: 30px;
+    background-color: rgb(175, 32, 6);
+    border: 2px solid rgb(238, 255, 0);
+    text-align: center;
+}
+.destacada {
+    grid-column: span 2;
+    padding: 30px;
+    background-color: green !important;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.mision-principal{
+    grid-row: span 2;
+    padding: 30px;
+    background-color: green;
+    border: 2px solid yellow;
+    text-align: center;
+}

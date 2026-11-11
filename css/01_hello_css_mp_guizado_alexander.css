@@ -1,0 +1,17 @@
+h1 {
+    color: darkslateblue;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+h3,
+p {
+    color: saddlebrown;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

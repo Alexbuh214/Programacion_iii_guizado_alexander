@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de préstamo - Alexander Guizado</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca de Alexander Guizado</h1>
+        <p>Autor: Alexander Guizado</p>
+        <p>Solicitud de préstamo de libros</p>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos del lector</legend>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+                <label for="codigo">Código de lector:</label><br>
+                <input type="text" id="codigo" name="codigo" placeholder="LEC-001" maxlength="10" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Detalles del préstamo</legend>
+                <label for="libro">Libro solicitado:</label><br>
+                <input type="text" id="libro" name="libro" placeholder="Ej.: Biografía de Cristiano Ronaldo" required><br><br>
+                <label for="seccion">Sección:</label><br>
+                <select id="seccion" name="seccion" required>
+                    <option value="">Selecciona una sección</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="literatura">Literatura</option>
+                    <option value="historia">Historia</option>
+                </select><br><br>
+                <label for="fecha">Fecha de solicitud:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                <label for="duracion">Duración del préstamo (días):</label><br>
+                <input type="number" id="duracion" name="duracion" min="1" max="30" value="7">
+            </fieldset>
+            <br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe un comentario sobre tu solicitud"></textarea><br><br>
+            <button type="submit">Solicitar préstamo</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </main>
+    <footer>
+        <p>Biblioteca de Alexander Guizado - 2026</p>
+    </footer>
+</body>
+</html>

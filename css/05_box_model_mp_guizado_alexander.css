@@ -1,0 +1,14 @@
+.box_model {
+    box-sizing: border-box;
+    width: 340px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #f4f0e8;
+    border: 8px solid darkgreen;
+}
+
+.box_model img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
