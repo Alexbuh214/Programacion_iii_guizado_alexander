@@ -1,0 +1,17 @@
+h1 {
+    color: #0b3d91;
+}
+
+h2 {
+    color: #0891b2;
+}
+
+h3,
+p {
+    color: #334155;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de pasajeros - Alexander Guizado</title>
+</head>
+<body>
+    <h1>Reserva de Vuelos</h1>
+    <p>Autor: Alexander Guizado</p>
+    <h2>Registro de pasajeros</h2>
+    <form action="#" method="get">
+        <p><label for="nombre">Nombre:</label><br><input type="text" id="nombre" name="nombre" placeholder="Ej.: Alex" required></p>
+        <p><label for="apellido">Apellido:</label><br><input type="text" id="apellido" name="apellido" required></p>
+        <p><label for="contrasena">Contraseña:</label><br><input type="password" id="contrasena" name="contrasena" required></p>
+        <p><label for="edad">Edad:</label><br><input type="number" id="edad" name="edad" min="0" max="120"></p>
+        <fieldset>
+            <legend>Tipo de viaje</legend>
+            <input type="radio" id="ida" name="tipo_viaje" value="ida">
+            <label for="ida">Solo ida</label>
+            <input type="radio" id="ida_vuelta" name="tipo_viaje" value="ida_vuelta">
+            <label for="ida_vuelta">Ida y vuelta</label>
+        </fieldset>
+        <fieldset>
+            <legend>Servicios adicionales</legend>
+            <input type="checkbox" id="maleta" name="servicios" value="maleta">
+            <label for="maleta">Maleta extra</label>
+            <input type="checkbox" id="seguro" name="servicios" value="seguro">
+            <label for="seguro">Seguro de viaje</label>
+            <input type="checkbox" id="comida" name="servicios" value="comida">
+            <label for="comida">Comida a bordo</label>
+        </fieldset>
+        <p>
+            <label for="clase">Clase:</label><br>
+            <select id="clase" name="clase">
+                <option value="economica">Económica</option>
+                <option value="ejecutiva">Ejecutiva</option>
+                <option value="primera">Primera clase</option>
+            </select>
+        </p>
+        <button type="submit">Registrarme</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>

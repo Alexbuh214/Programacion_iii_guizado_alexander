@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar vuelo - Alexander Guizado</title>
+</head>
+<body>
+    <header>
+        <h1>Reserva de Vuelos</h1>
+        <p>Autor: Alexander Guizado</p>
+        <p>Formulario de reserva</p>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos del pasajero</legend>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+                <label for="documento">Número de pasaporte o cédula:</label><br>
+                <input type="text" id="documento" name="documento" placeholder="Ej.: 1700000000" maxlength="12" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Detalles del vuelo</legend>
+                <label for="origen">Origen:</label><br>
+                <input type="text" id="origen" name="origen" placeholder="Ej.: Quito" required><br><br>
+                <label for="destino">Destino:</label><br>
+                <select id="destino" name="destino" required>
+                    <option value="">Selecciona un destino</option>
+                    <option value="galapagos">Galápagos</option>
+                    <option value="lima">Lima</option>
+                    <option value="madrid">Madrid</option>
+                </select><br><br>
+                <label for="fecha">Fecha de salida:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                <label for="pasajeros">Número de pasajeros:</label><br>
+                <input type="number" id="pasajeros" name="pasajeros" min="1" max="9" value="1">
+            </fieldset>
+            <br>
+            <label for="comentario">Solicitudes especiales:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Ej.: asistencia en silla de ruedas, comida vegetariana"></textarea><br><br>
+            <button type="submit">Reservar vuelo</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </main>
+    <footer>
+        <p>Reserva de Vuelos - Alexander Guizado - 2026</p>
+    </footer>
+</body>
+</html>

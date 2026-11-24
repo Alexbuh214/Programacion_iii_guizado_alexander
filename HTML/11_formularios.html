@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de misiones</title>
+</head>
+
+<body>
+    <header>
+        <h1>Centro de Misiones Galácticas</h1>
+        <p>Registro de operaciones</p>
+    </header>
+
+
+    <hr>
+    <main>
+        <form action="#" method="get" id="registro-misiones">
+            <fieldset>
+                <legend>Información de la misión</legend>
+                <label for="codigo">
+                    Código de misión:
+                </label>
+                <input type="text" id="codigo" name="codigo" placeholder="MIS-001" maxlength="10" required>
+                <br><br>
+                <label for="responsable">
+                    Responsable:
+                </label>
+                <select id="responsable" name="responsable" required>
+                    <option value="">
+                        Selecciona un personaje
+                    </option>
+                    <option value="luke">
+                        Luke Skywalker
+                    </option>
+                    <option value="leia">
+                        Leia Organa
+                    </option>
+                    <option value="han">
+                        Han Solo
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="planeta">
+                    Planeta de destino:
+                </label>
+                <input type="text" id="planeta" name="planeta" placeholder="Ej. Dagobah" required>
+                <br><br>
+                <label for="fecha">
+                    Fecha de la misión:
+                </label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Características</legend>
+                <p>Prioridad de la misión:</p>
+                <input type="radio" id="alta" name="prioridad" value="alta" required>
+                <label for="alta">Alta</label>
+                <input type="radio" id="media" name="prioridad" value="media">
+                <label for="media">Media</label>
+                <input type="radio" id="baja" name="prioridad" value="baja">
+                <label for="baja">Baja</label>
+
+                <br><br>
+
+                <label for="riesgo">
+                    Nivel de riesgo (1 a 10):
+                </label>
+                <input type="number" id="riesgo" name="riesgo" min="1" max="10" value="5">
+                <p>Recursos necesarios:</p>
+                <input type="checkbox" id="nave" name="recursos" value="nave">
+                <label for="nave">
+                    Nave espacial
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="droides" name="recursos" value="droides">
+                <label for="droides">
+                    Droides
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="equipo" name="recursos" value="equipo">
+                <label for="equipo">
+                    Equipo de comunicación
+                </label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Descripción de la misión</legend>
+                <label for="descripcion">
+                    Objetivo principal:
+                </label>
+
+                <br>
+
+                <textarea id="descripcion" name="descripcion" rows="5" cols="45" maxlength="500"
+                    placeholder="Describe la misión..." required></textarea>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">
+                Registrar misión
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Centro Galáctico - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
