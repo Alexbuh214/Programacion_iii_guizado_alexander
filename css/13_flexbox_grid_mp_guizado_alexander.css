@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+.item {
+    padding: 20px;
+    background-color: #0b3d91;
+    border: 2px solid #f59e0b;
+    text-align: center;
+}
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.asientos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.bloque {
+    padding: 30px;
+    background-color: #0891b2;
+    text-align: center;
+}
+
+.abordaje {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 120px 90px;
+    gap: 10px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.abordaje div {
+    padding: 20px;
+    background-color: #16a34a;
+    text-align: center;
+}
+
+.flota {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.flota div {
+    padding: 30px;
+    background-color: #0b3d91;
+    text-align: center;
+}
+
+.asientos2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.destinos div {
+    padding: 30px;
+    background-color: #b45309;
+    text-align: center;
+}
+
+.ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.ofertas div {
+    padding: 30px;
+    background-color: #0b3d91;
+    text-align: center;
+}
+
+.ofertas .destacada {
+    grid-column: span 2;
+    background-color: #16a34a;
+}
+
+.ofertas .principal {
+    grid-row: span 2;
+    background-color: #dc2626;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir JavaScript - Alexander Guizado</title>
+    <!-- Modo interno: script dentro del head -->
+    <script>
+        console.log("Bienvenido al sistema de reserva de vuelos");
+    </script>
+</head>
+<body>
+    <h1>Reserva de Vuelos</h1>
+    <p>Autor: Alexander Guizado</p>
+
+    <h2>Modo inline</h2>
+    <button onclick="alert('Vuelo Quito - Lima reservado')">Reservar vuelo</button>
+    <input type="text" oninput="console.log('Destino:', this.value)" placeholder="Escribe tu destino">
+    <input type="text" onfocus="console.log('Escribiendo el nombre del pasajero')"
+        onblur="console.log('Nombre del pasajero guardado')" placeholder="Nombre del pasajero">
+
+    <!-- Modo externo: archivo .js -->
+    <script src="01_incluir_mp_guizado_alexander.js"></script>
+</body>
+</html>

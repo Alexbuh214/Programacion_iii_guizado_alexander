@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #0b3d91;
+}
+
+header h1 {
+    margin: 0;
+    color: #facc15;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Escena del cielo */
+.cielo {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(#38bdf8, #bae6fd);
+}
+
+.nube {
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.8;
+    animation-name: mover-nube;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.nube1 {
+    top: 30px;
+    animation-delay: 0s;
+}
+
+.nube2 {
+    top: 120px;
+    animation-delay: 2.5s;
+}
+
+.nube3 {
+    top: 190px;
+    animation-delay: 5s;
+}
+
+@keyframes mover-nube {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(-120px);
+    }
+}
+
+.avion {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    color: #0b3d91;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.avion span {
+    font-size: 50px;
+}
+
+.avion p {
+    margin: 0;
+    font-weight: bold;
+}
+
+@keyframes vuelo {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(300px, -30px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(600px, 10px) rotate(3deg);
+    }
+}
+
+.aviso {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 8px 14px;
+    background-color: #f59e0b;
+    color: #1e293b;
+    font-weight: bold;
+    border-radius: 6px;
+    animation: advertencia 2s ease-in-out infinite;
+}
+
+@keyframes advertencia {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* Paneles con transiciones */
+.controles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.panel {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #1e293b;
+    border: 2px solid #0891b2;
+    border-radius: 10px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.panel:hover {
+    transform: translateY(-8px) scale(1.03);
+    background-color: #0b3d91;
+}
+
+/* Radar */
+.radar-seccion {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.radar {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 3px solid #16a34a;
+    border-radius: 50%;
+}
+
+.pulso {
+    width: 30px;
+    height: 30px;
+    background-color: #16a34a;
+    border-radius: 50%;
+    animation: pulsoRadar 2s ease-out infinite;
+}
+
+@keyframes pulsoRadar {
+    from {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #1e293b;
+}
+
+/* Accesibilidad: respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+    .nube,
+    .avion,
+    .aviso,
+    .pulso {
+        animation: none;
+    }
+}
