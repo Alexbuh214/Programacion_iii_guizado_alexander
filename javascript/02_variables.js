@@ -1,0 +1,16 @@
+console.log("Hello from console");
+let company="Morty";
+let energy=100;
+let dimension='C-137';
+let Gasoline=true;
+console.log(company);
+console.log(energy);
+console.log(dimension);
+console.log(Gasoline);
+company='Rick';
+energy=15;
+dimension='C-140';
+console.log(company);
+console.log(energy);
+console.log(dimension);
+console.log(Gasoline);

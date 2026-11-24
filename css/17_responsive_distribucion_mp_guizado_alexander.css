@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef4fb;
+    color: #1e293b;
+}
+
+header {
+    padding: 2rem 1rem;
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #0891b2;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.distribucion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.busqueda,
+.resultados,
+aside {
+    padding: 1.25rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.campo {
+    padding: 1rem;
+    background-color: #e0f2fe;
+    border-radius: 6px;
+}
+
+.resultados {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.resultados h2 {
+    grid-column: 1 / -1;
+}
+
+.vuelo {
+    padding: 1rem;
+    border: 2px solid #0b3d91;
+    border-radius: 8px;
+}
+
+aside ul {
+    padding-left: 1.5rem;
+}
+
+.boton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #16a34a;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .campos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .resultados {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1000px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .distribucion {
+        grid-template-columns: minmax(0, 3fr) minmax(240px, 1fr);
+    }
+
+    .resultados {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
