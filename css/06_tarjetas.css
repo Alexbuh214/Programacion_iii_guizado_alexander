@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+    color:aqua;
+    font: Arial, sans-serif;
+
+}
+
+header {
+    background-color: fuchsia;
+}
+h1 {
+    color:blue
+}
+main{
+    padding:20px;
+}
+h2 {
+    color:rgb(199, 119, 14);
+}
+.tarjeta h3 {
+    margin-top: 0;
+    color:brown;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 350px;
+    min-height: 100px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color:blueviolet;
+    border: 3px solid blueviolet;
+    border-radius: 15 px;
+}
+
+.jedi {
+    border-color:rgb(23, 181, 155);
+}
+.sith {
+    border-color: rgb(220, 255, 255);
+}
+
+footer { 
+    background-color: azure;
+    padding: 15px;
+    text-align: center;
+}
+

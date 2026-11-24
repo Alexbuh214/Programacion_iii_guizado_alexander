@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secreto {
+    visibility: hidden;
+}
+
+.caja {
+    position: static;
+    background-color: #e0f2fe;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.especial {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    background-color: #fde68a;
+    padding: 20px;
+}
+
+.tarjeta-boleto {
+    position: relative;
+    width: 300px;
+    padding: 40px 15px 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #0b3d91;
+    color: white;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f59e0b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+    background-color: #0b3d91;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+}
+
+section {
+    min-height: 400px;
+    padding: 30px;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.boton-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #16a34a;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
