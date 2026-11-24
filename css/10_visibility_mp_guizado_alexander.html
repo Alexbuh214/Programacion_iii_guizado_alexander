@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility y position - Alexander Guizado</title>
+    <link rel="stylesheet" href="10_visibility_mp_guizado_alexander.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de Vuelos</h1>
+        <p>Autor: Alexander Guizado</p>
+    </header>
+    <nav>
+        <a href="#vuelos">Vuelos</a>
+        <a href="#pasajero">Pasajero</a>
+        <a href="#pago">Pago</a>
+    </nav>
+
+    <h2>Visibility</h2>
+    <p>Vuelo AG-101: Quito - Guayaquil</p>
+    <p class="secreto">Vuelo AG-000: reservado para la tripulación</p>
+    <p>Vuelo AG-102: Quito - Manta</p>
+
+    <h2>Position static</h2>
+    <div class="caja">Equipaje de mano</div>
+    <div class="caja">Equipaje facturado</div>
+
+    <h2>Position relative</h2>
+    <div class="especial">Equipaje especial</div>
+
+    <h2>Position absolute</h2>
+    <div class="tarjeta-boleto">
+        <span class="etiqueta">VIP</span>
+        <h3>Boleto Quito - Madrid</h3>
+        <p>Primera clase · Asiento 1A</p>
+    </div>
+
+    <h2>Position fixed y sticky</h2>
+    <section id="vuelos">
+        <h2>Vuelos</h2>
+        <p>Busca vuelos por origen, destino y fecha.</p>
+    </section>
+    <section id="pasajero">
+        <h2>Pasajero</h2>
+        <p>Ingresa los datos del pasajero.</p>
+    </section>
+    <section id="pago">
+        <h2>Pago</h2>
+        <p>Confirma tu reserva.</p>
+    </section>
+
+    <a class="boton-fijo" href="#">Reservar ahora</a>
+</body>
+</html>

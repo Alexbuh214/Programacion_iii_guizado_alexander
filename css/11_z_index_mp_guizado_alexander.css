@@ -1,0 +1,35 @@
+.escenario {
+    position: relative;
+    height: 280px;
+}
+
+.pase {
+    position: absolute;
+    width: 160px;
+    height: 110px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.economica {
+    top: 20px;
+    left: 20px;
+    background-color: #0891b2;
+    z-index: 1;
+}
+
+.ejecutiva {
+    top: 60px;
+    left: 80px;
+    background-color: #0b3d91;
+    z-index: 2;
+}
+
+.primera {
+    top: 100px;
+    left: 140px;
+    background-color: #b45309;
+    z-index: 3;
+}

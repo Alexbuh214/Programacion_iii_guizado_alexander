@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: #eef4fb;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0b3d91;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #0b3d91;
+    text-align: center;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 350px;
+    min-height: 100px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border: 3px solid;
+    border-radius: 15px;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #0b3d91;
+}
+
+.nacional {
+    border-color: #16a34a;
+}
+
+.internacional {
+    border-color: #f59e0b;
+}
+
+footer {
+    background-color: #0b3d91;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
